@@ -1,0 +1,240 @@
+/*Tags gerais*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    color: black;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    font-size: 1.5rem;
+    text-align: justify;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--primary);
+    background-color: #2c75e270;
+    
+}
+body::-webkit-scrollbar-track{
+    background: rgba(230, 207, 207, 0.548);
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: var(--hover);
+}
+:root {
+    --primary: #ff3131;
+    --hover: #d63232;
+    --altura-main: calc(100vh - 15rem);
+}
+
+header {
+    height: 10rem;
+
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 0px var(--primary)    ;
+}
+
+h2 {
+    font-weight: 400;
+    text-align: center;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#titulo {
+    height: 70%;
+    text-align: center;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+main {
+    min-height: var(--altura-main);
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ol,
+ul {
+    /*Para bullet não sair do enquadramento*/
+    width: 90%;
+    margin: auto;
+    
+}
+ol{
+    list-style-type: upper-roman;
+}
+ul{
+    list-style-type: square;
+}
+/*Tabela*/
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+thead,
+tfoot {
+    font-weight: bolder;
+}
+
+tbody {
+    text-align: center;
+}
+
+table tr th,
+table tr td {
+    border: 0.1rem solid BLACK;
+    padding: 0.1rem;
+
+}
+
+/*Form*/
+input {
+    height: 1.5rem;
+}
+
+fieldset {
+    padding: 1%;
+}
+
+form button {
+    background-color: #2c74e2;
+    max-width: 20%;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border:0;
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: box-shadow, 0.3s;
+
+}
+
+
+form textarea {
+    resize: none;
+}
+
+form input,
+form textarea {
+    border-radius: 10px;
+    outline: 0;
+    border: 1px solid #000;
+    padding: 0.1%;
+}
+
+form button:hover {
+    background-color: var(--hover);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
+}
+
+form button span {
+    width: 100%;
+    padding: 5%;
+    color: white;
+}
+
+
+
+form input[type="file"] {
+    border: 0;
+}
+
+
+
+footer {
+    background-color: var(--primary);
+    height: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.no-center-table {
+    text-align: left;
+}
+
+#center-main {
+    width: 100%;
+    height: 90%;
+}
+
+.bolder-table {
+    font-weight: bolder;
+}
+
+/*faq*/
+#faq{
+    overflow: hidden;
+}
+#faq section a{
+    color: #000;
+}
+#faq section{
+    padding-top: 10rem;
+}
+#faq main{
+    flex-wrap: wrap;
+    height: auto;
+    padding-top: 10rem;
+
+}
+#faq header{
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+#faq footer{
+    position: fixed;
+    bottom:0;
+}
+
+#faq main section.resposta-faq{
+    width: 100%;
+    height: var(--altura-main);
+    padding-top: 10rem;
+    
+}
+#faq #perguntas{
+    height: var(--altura-main);
+    margin-top: 0;
+    width: 100%;
+}
+#faq #center-main{
+    padding-left: 1%;
+}
