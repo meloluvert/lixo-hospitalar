@@ -61,20 +61,24 @@ header nav ul li:hover{
 
 /*==========================================================================*/
 /*Corpo Geral*/
-
+body{
+    font-family: 'Inter';
+}
 main{
     display: flex;
     justify-content: center;
     min-height: calc(100vh - 11rem);
     text-align: justify;
 }
-
+p{
+    text-indent: 1rem;
+}
 /*==========================================================================*/
 /*Corpo do index*/
 
 .text h3{
     color: var(--t);
-    text-decoration: underline;
+    text-align: center;
 }
 
 .text article{
@@ -83,34 +87,58 @@ main{
 }
 
 .text article div{
+    align-items: center;
+    justify-content: center;
     display: flex;
 
 }
+.text article #tijolo{
+    flex-wrap: wrap;
+}
+.text  figure{
+    
+    margin-top: 0.1rem;
+    width: 100%;
+}
+.text figure img{
+    max-width: 100%;
+    margin: auto;
+    display: block;
 
+}
+.text figure figcaption{
+    text-align: center;
+}
 .text article ul{
-    list-style-type: square;
+    list-style-type: disc;
 }
 
 .text article ul{
-    margin-left: 3rem;
+    margin-left: 1rem;
 }
 
-.text article ul li strong, .text article ul li h4{
+ .text article ul li h4{
     color: var(--t);
 }
-
+strong{
+    color: var(--t);
+}
 .text article ul li div img{
     height: 8rem;
     border-radius: 10px;
 }
-
+img{
+    border-radius: 10px;
+}
 .text article div img{
     height: 8rem;
     border-radius: 10px;
 }
-
+.text article p a{
+    color: #ff3131;
+}
 .ordem{
-    margin-left: 3rem;
+    margin-left: 1rem;
     list-style: upper-roman;
 }
 
@@ -118,23 +146,23 @@ main{
 /*Rodapé padrão*/
 
 footer{
-    height: 2rem;
+    height: 4rem;
     display: flex;
-    justify-content: start;
     align-items: center; 
+    justify-content: center;
     background-color: var(--p);  
     color: var(--s); 
-    border-bottom: 0.5rem solid var(--p);
-    border-bottom-left-radius: 8%;
-    border-bottom-right-radius: 8%;
+    flex-wrap: wrap ;
+
 }
 
 footer p{
-    padding-left: 1rem;
     color: var(--w);
+    width: 100%;
+    text-indent: 0;
+    text-align: center;
 }
-
-.footer{
-    background-color: var(--b);
-    height: 2rem;
+footer p a{
+    text-decoration: none;
+    color: var(--w);
 }
