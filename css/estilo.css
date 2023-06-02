@@ -74,6 +74,7 @@ main{
 
 .text h3{
     color: var(--t);
+    text-decoration: underline;
 }
 
 .text article{
@@ -90,13 +91,27 @@ main{
     list-style-type: square;
 }
 
-.text article ul, ol{
+.text article ul{
     margin-left: 3rem;
+}
+
+.text article ul li strong, .text article ul li h4{
+    color: var(--t);
 }
 
 .text article ul li div img{
     height: 8rem;
     border-radius: 10px;
+}
+
+.text article div img{
+    height: 8rem;
+    border-radius: 10px;
+}
+
+.ordem{
+    margin-left: 3rem;
+    list-style: upper-roman;
 }
 
 /*==========================================================================*/

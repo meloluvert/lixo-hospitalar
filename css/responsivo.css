@@ -6,6 +6,13 @@
 }
 
 @media(max-width:600px) {
+    header div h1{
+        font-size: 1.25rem;
+        text-align: center;
+    }
+}    
+
+@media(max-width:600px) {
     main {
         width: 99%;
     }
