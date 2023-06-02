@@ -50,7 +50,7 @@ header nav ul li{
 }
 
 header nav ul li a{
-    color: var(--w);
+    color: #fff;
     text-decoration: none;
 }
 
@@ -77,13 +77,13 @@ main{
 }
 
 .text article{
-    width: 85%;
     padding: 5%;
     font-size: larger;
 }
 
-.text article ol{
-    list-style-type: upper-roman;
+.text article div{
+    display: flex;
+
 }
 
 .text article ul{
@@ -96,6 +96,7 @@ main{
 
 .text article ul li div img{
     height: 8rem;
+    border-radius: 10px;
 }
 
 /*==========================================================================*/
